@@ -1,0 +1,10 @@
+.editorconfig
+.jshintrc
+.travis.yml
+bower.json
+component.json
+dist/can-play-type-to-number.js
+gulpfile.js
+src/
+test/
+tmp/

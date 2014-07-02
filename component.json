@@ -1,0 +1,20 @@
+{
+  "name": "can-play-type-to-number",
+  "version": "0.1.0",
+  "description": "'probably' => 2, 'maybe' => 1, '' => 0",
+  "keywords": [
+    "audio",
+    "video",
+    "media",
+    "type",
+    "codec",
+    "canplaytype",
+    "playability",
+    "support",
+    "level",
+    "number"
+  ],
+  "repo": "shinnn/can-play-type-to-number",
+  "main": "dist/can-play-type-to-number-cjs.js",
+  "license": "MIT"
+}

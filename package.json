@@ -1,0 +1,59 @@
+{
+  "name": "can-play-type-to-number",
+  "version": "0.0.0",
+  "description": "'probably' => 2, 'maybe' => 1, '' => 0",
+  "main": "dist/can-play-type-to-number-cjs.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "email": "snnskwtnb@gmail.com",
+    "url": "https://github.com/shinnn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/can-play-type-to-number.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinnn/can-play-type-to-number/issues"
+  },
+  "homepage": "https://github.com/shinnn/can-play-type-to-number",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/can-play-type-to-number/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [
+    "audio",
+    "video",
+    "media",
+    "type",
+    "codec",
+    "canplaytype",
+    "playability",
+    "support",
+    "level",
+    "number",
+    "client-side",
+    "browser"
+  ],
+  "devDependencies": {
+    "gulp": "^3.8.5",
+    "gulp-esnext": "^0.3.0",
+    "gulp-footer": "^1.0.4",
+    "gulp-header": "^1.0.2",
+    "gulp-jshint": "^1.6.4",
+    "gulp-jsonlint": "0.0.3",
+    "gulp-load-plugins": "^0.5.3",
+    "gulp-mocha": "^0.4.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-wrap-umd": "^0.2.0",
+    "jshint-stylish": "^0.2.0",
+    "merge-stream": "^0.1.2",
+    "require-main": "^0.1.0",
+    "rimraf": "^2.2.8",
+    "to-camel-case": "^0.2.1"
+  }
+}
