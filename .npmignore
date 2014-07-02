@@ -5,6 +5,6 @@ bower.json
 component.json
 dist/can-play-type-to-number.js
 gulpfile.js
+test.js
 src/
-test/
 tmp/
