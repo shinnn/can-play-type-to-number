@@ -11,8 +11,9 @@
   "quotmark": "single",
   "regexp": true,
   "strict": true,
+  "unused": true,
   "undef": true,
-  "browser": false,
+  "browser": true,
   "node": true,
   "mocha": true
 }
