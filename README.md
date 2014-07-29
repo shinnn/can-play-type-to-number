@@ -44,8 +44,9 @@ component install shinnn/can-play-type-to-number
 
 ## API
 
-### canPlayTypeToNumber(playability)
+### canPlayTypeToNumber(*playability*)
 
+*playability*: `String` (`'probably'`, `'maybe'`, or `''`)  
 Return: `Number` (0 - 2)
 
 | argument     | return |
