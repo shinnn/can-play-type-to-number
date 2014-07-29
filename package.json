@@ -31,6 +31,7 @@
     "media",
     "type",
     "codec",
+    "codecs",
     "canplaytype",
     "playability",
     "support",

@@ -1,6 +1,6 @@
 {
   "name": "can-play-type-to-number",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "'probably' => 2, 'maybe' => 1, '' => 0",
   "keywords": [
     "audio",
@@ -8,6 +8,7 @@
     "media",
     "type",
     "codec",
+    "codecs",
     "canplaytype",
     "playability",
     "support",
