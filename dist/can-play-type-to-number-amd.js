@@ -2,7 +2,8 @@
  * can-play-type-to-number.js | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/can-play-type-to-number
 */
-!function(global) {
+define(function(require,exports,module){
+
 'use strict';
 
 function canPlayTypeToNumber(playability) {
@@ -15,8 +16,9 @@ function canPlayTypeToNumber(playability) {
   } else if (typeof playability === 'string') {
     throw new Error('The string should be "probably", "maybe" or "".');
   }
-  throw new TypeError(playability + 'is not a string.');
+  throw new TypeError(playability + ' is not a string.');
 }
 
-global.canPlayTypeToNumber = canPlayTypeToNumber;
-}(this);
+return canPlayTypeToNumber;
+
+});

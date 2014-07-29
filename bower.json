@@ -1,6 +1,6 @@
 {
   "name": "can-play-type-to-number",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "'probably' => 2, 'maybe' => 1, '' => 0",
   "keywords": [
     "audio",
@@ -34,6 +34,7 @@
     "src",
     "tmp",
     "dist/can-play-type-to-number-cjs.js",
+    "dist/can-play-type-to-number-amd.js",
     "test.js",
     "gulpfile.js",
     "component.json",

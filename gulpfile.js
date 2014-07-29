@@ -1,7 +1,5 @@
 'use strict';
 
-var fs = require('fs');
-
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
@@ -40,17 +38,22 @@ gulp.task('clean:tmp', rimraf.bind(null, 'tmp'));
 gulp.task('build:dist', ['clean:dist'], function() {
   return mergeStream(
     gulp.src(['src/*.js'])
-      .pipe($.wrapUmd({
-        exports: funName,
-        namespace: funName
+      .pipe($.header(banner + '!function(global) {\n', {pkg: pkg}))
+      .pipe($.footer('\nglobal.<%= funName %> = <%= funName %>;\n}(this);\n', {
+        funName: funName
       }))
-      .pipe($.header(banner, {pkg: pkg}))
       .pipe($.rename(bower.main))
       .pipe(gulp.dest('')),
     gulp.src(['src/*.js'])
       .pipe($.header(banner, {pkg: pkg}))
       .pipe($.footer('\nmodule.exports = <%= funName %>;\n', {funName: funName}))
       .pipe($.rename(pkg.main))
+      .pipe(gulp.dest('')),
+    gulp.src(['src/*.js'])
+      .pipe($.wrapAmd({exports: funName}))
+      .pipe($.header(banner, {pkg: pkg}))
+      .pipe($.rename(bower.main))
+      .pipe($.rename({suffix: '-amd'}))
       .pipe(gulp.dest(''))
   );
 });
@@ -71,7 +74,7 @@ gulp.task('test', ['build'], function() {
 gulp.task('watch', function() {
   mochaReporter = 'dot';
   gulp.watch(['{,src/}*.js'], ['test']);
-  gulp.watch(['*.json'], ['lint']);
+  gulp.watch(['*.json', '.jshintrc'], ['lint']);
 });
 
 gulp.task('default', ['test', 'watch']);

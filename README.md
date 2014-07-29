@@ -42,6 +42,10 @@ component install shinnn/can-play-type-to-number
 
 [Download the script file directly.](https://raw.githubusercontent.com/shinnn/can-play-type-to-number/master/dist/can-play-type-to-number.js "view raw")
 
+### [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) support
+
+This repository includes [the AMD-friendly build](https://raw.githubusercontent.com/shinnn/can-play-type-to-number/master/dist/can-play-type-to-number-amd.js) but the package managers doesn't include it. If you want to use it, download it directly.
+
 ## API
 
 ### canPlayTypeToNumber(*playability*)
