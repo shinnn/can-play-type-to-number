@@ -16,5 +16,8 @@
   ],
   "repository": "shinnn/can-play-type-to-number",
   "main": "dist/can-play-type-to-number-cjs.js",
+  "scripts": [
+    "dist/can-play-type-to-number-cjs.js"
+  ],
   "license": "MIT"
 }
