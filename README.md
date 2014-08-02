@@ -32,7 +32,7 @@ npm i --save can-play-type-to-number
 bower i --save can-play-type-to-number
 ```
 
-#### [Component](http://component.io/)
+#### [Component](https://github.com/component/component)
 
 ```
 component install shinnn/can-play-type-to-number
