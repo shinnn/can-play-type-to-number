@@ -31,10 +31,10 @@ npm i --save can-play-type-to-number
 bower i --save can-play-type-to-number
 ```
 
-#### [Component](https://github.com/component/component)
+#### [Duo](http://duojs.org/)
 
 ```
-component install shinnn/can-play-type-to-number
+var canPlayTypeToNumber = require('shinnn/can-play-type-to-number');
 ```
 
 ### Standalone
