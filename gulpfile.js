@@ -26,7 +26,8 @@ var testReporter = 'spec';
 gulp.task('lint', function() {
   gulp.src(['*.js'])
     .pipe($.jshint())
-    .pipe($.jshint.reporter(stylish));
+    .pipe($.jshint.reporter(stylish))
+    .pipe($.jscs('.jscs.json'));
   gulp.src('*.json')
     .pipe($.jsonlint())
     .pipe($.jsonlint.reporter());
