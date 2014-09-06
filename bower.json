@@ -33,6 +33,7 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "coverage",
     "node_modules",
     "src",
     "dist/can-play-type-to-number-cjs.js",
