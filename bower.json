@@ -35,7 +35,6 @@
     "**/.*",
     "node_modules",
     "src",
-    "tmp",
     "dist/can-play-type-to-number-cjs.js",
     "dist/can-play-type-to-number-amd.js",
     "test.js",

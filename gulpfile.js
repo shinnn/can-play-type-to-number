@@ -1,12 +1,13 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var exec = require('child_process').exec;
 
+var $ = require('gulp-load-plugins')();
+var gulp = require('gulp');
 var mergeStream = require('merge-stream');
 var rimraf = require('rimraf');
-var toCamelCase = require('to-camel-case');
 var stylish = require('jshint-stylish');
+var toCamelCase = require('to-camel-case');
 
 var pkg = require('./package.json');
 var bower = require('./bower.json');
@@ -20,7 +21,7 @@ var banner = [
   '*/\n'
 ].join('\n');
 
-var mochaReporter = 'spec';
+var testReporter = 'spec';
 
 gulp.task('lint', function() {
   gulp.src(['*.js'])
@@ -31,11 +32,9 @@ gulp.task('lint', function() {
     .pipe($.jsonlint.reporter());
 });
 
-gulp.task('clean:dist', rimraf.bind(null, 'dist'));
+gulp.task('clean', rimraf.bind(null, 'dist'));
 
-gulp.task('clean:tmp', rimraf.bind(null, 'tmp'));
-
-gulp.task('build:dist', ['clean:dist'], function() {
+gulp.task('build', ['lint', 'clean'], function() {
   return mergeStream(
     gulp.src(['src/*.js'])
       .pipe($.header(banner + '!function(global) {\n', {pkg: pkg}))
@@ -58,21 +57,21 @@ gulp.task('build:dist', ['clean:dist'], function() {
   );
 });
 
-gulp.task('build:test', ['clean:tmp'], function() {
-  return gulp.src(['test.js'])
-    .pipe($.esnext())
-    .pipe(gulp.dest('tmp'));
-});
+gulp.task('test', ['build'], function(cb) {
+  var cmd = 'node test.js';
+  if (!process.env.APPVEYOR) {
+    cmd += ' | node ./node_modules/.bin/tap-' + testReporter;
+  }
 
-gulp.task('build', ['lint', 'build:dist', 'build:test']);
-
-gulp.task('test', ['build'], function() {
-  gulp.src(['tmp/test.js'], {read: false})
-    .pipe($.mocha({reporter: mochaReporter}));
+  exec(cmd, function(err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
 });
 
 gulp.task('watch', function() {
-  mochaReporter = 'dot';
+  testReporter = 'dot';
   gulp.watch(['{,src/}*.js'], ['test']);
   gulp.watch(['*.json', '.jshintrc'], ['lint']);
 });

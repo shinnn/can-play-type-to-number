@@ -8,4 +8,3 @@ dist/can-play-type-to-number-amd.js
 gulpfile.js
 test.js
 src/
-tmp/
