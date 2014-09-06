@@ -4,6 +4,7 @@
 [![Bower version](https://badge.fury.io/bo/can-play-type-to-number.svg)](http://badge.fury.io/bo/can-play-type-to-number)
 [![Build Status](https://travis-ci.org/shinnn/can-play-type-to-number.svg?branch=master)](https://travis-ci.org/shinnn/can-play-type-to-number)
 [![Dependency Status](https://david-dm.org/shinnn/can-play-type-to-number.svg)](https://david-dm.org/shinnn/can-play-type-to-number)
+[![Build status](https://ci.appveyor.com/api/projects/status/cj58w22uuyvaw3al)](https://ci.appveyor.com/project/ShinnosukeWatanabe/can-play-type-to-number)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/can-play-type-to-number.svg)](https://coveralls.io/r/shinnn/can-play-type-to-number)
 [![devDependency Status](https://david-dm.org/shinnn/can-play-type-to-number/dev-status.svg)](https://david-dm.org/shinnn/can-play-type-to-number#info=devDependencies)
 

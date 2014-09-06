@@ -1,3 +1,4 @@
+*.yml
 .editorconfig
 .jshintrc
 .travis.yml
