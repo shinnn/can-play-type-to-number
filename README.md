@@ -1,9 +1,6 @@
 # can-play-type-to-number
 
-[![NPM version](https://badge.fury.io/js/can-play-type-to-number.svg)](http://badge.fury.io/js/can-play-type-to-number)
-[![Bower version](https://badge.fury.io/bo/can-play-type-to-number.svg)](http://badge.fury.io/bo/can-play-type-to-number)
 [![Build Status](https://travis-ci.org/shinnn/can-play-type-to-number.svg?branch=master)](https://travis-ci.org/shinnn/can-play-type-to-number)
-[![Dependency Status](https://david-dm.org/shinnn/can-play-type-to-number.svg)](https://david-dm.org/shinnn/can-play-type-to-number)
 [![Build status](https://ci.appveyor.com/api/projects/status/cj58w22uuyvaw3al)](https://ci.appveyor.com/project/ShinnosukeWatanabe/can-play-type-to-number)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/can-play-type-to-number.svg)](https://coveralls.io/r/shinnn/can-play-type-to-number)
 [![devDependency Status](https://david-dm.org/shinnn/can-play-type-to-number/dev-status.svg)](https://david-dm.org/shinnn/can-play-type-to-number#info=devDependencies)
@@ -22,13 +19,13 @@ canPlayTypeToNumber('perhaps'); //=> throws an error
 
 ### Install with package manager
 
-#### [npm](https://www.npmjs.org/)
+#### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/can-play-type-to-number.svg)](https://www.npmjs.org/package/can-play-type-to-number)
 
 ```
 npm i --save can-play-type-to-number
 ```
 
-#### [Bower](http://bower.io/)
+#### [Bower](http://bower.io/) [![Bower version](https://badge.fury.io/bo/can-play-type-to-number.svg)](https://github.com/shinnn/can-play-type-to-number/releases)
 
 ```
 bower i --save can-play-type-to-number
@@ -67,4 +64,4 @@ It throws an error when the argument isn't included in the list above.
 
 Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
 
-Licensed under [the MIT LIcense](./LICENSE).
+Licensed under [the MIT License](./LICENSE).
