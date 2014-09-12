@@ -17,7 +17,7 @@ canPlayTypeToNumber('perhaps'); //=> throws an error
 
 ## Installation
 
-### Install with package manager
+### Package managers
 
 #### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/can-play-type-to-number.svg)](https://www.npmjs.org/package/can-play-type-to-number)
 
@@ -33,7 +33,7 @@ bower i --save can-play-type-to-number
 
 #### [Duo](http://duojs.org/)
 
-```
+```javascript
 var canPlayTypeToNumber = require('shinnn/can-play-type-to-number');
 ```
 
