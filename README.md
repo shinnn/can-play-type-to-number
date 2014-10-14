@@ -21,13 +21,13 @@ canPlayTypeToNumber('perhaps'); //=> throws an error
 
 #### [npm](https://www.npmjs.org/) [![NPM version](https://badge.fury.io/js/can-play-type-to-number.svg)](https://www.npmjs.org/package/can-play-type-to-number)
 
-```
+```sh
 npm i --save can-play-type-to-number
 ```
 
 #### [Bower](http://bower.io/) [![Bower version](https://badge.fury.io/bo/can-play-type-to-number.svg)](https://github.com/shinnn/can-play-type-to-number/releases)
 
-```
+```sh
 bower i --save can-play-type-to-number
 ```
 
