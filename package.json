@@ -45,24 +45,24 @@
     "browser"
   ],
   "devDependencies": {
-    "gulp": "^3.8.7",
+    "gulp": "^3.8.8",
     "gulp-footer": "^1.0.5",
-    "gulp-header": "^1.0.5",
+    "gulp-header": "^1.1.1",
     "gulp-jscs": "^1.1.2",
-    "gulp-jshint": "^1.8.4",
+    "gulp-jshint": "^1.8.5",
     "gulp-jsonlint": "0.1.0",
-    "gulp-load-plugins": "^0.6.0",
+    "gulp-load-plugins": "^0.7.0",
     "gulp-rename": "^1.2.0",
     "gulp-wrap-amd": "^0.3.1",
     "istanbul": "^0.3.2",
-    "istanbul-coveralls": "^1.0.0",
-    "jshint-stylish": "^0.4.0",
-    "merge-stream": "^0.1.5",
+    "istanbul-coveralls": "^1.0.1",
+    "jshint-stylish": "^1.0.0",
+    "merge-stream": "^0.1.6",
     "require-main": "^0.1.1",
     "rimraf": "^2.2.8",
     "tap-dot": "^0.2.3",
-    "tap-spec": "^0.2.1",
-    "tape": "^2.14.0",
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0",
     "to-camel-case": "^0.2.1"
   }
 }
