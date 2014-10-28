@@ -2,7 +2,7 @@
 
 var test = require('tape');
 
-var canPlayTypeToNumber = require('require-main')();
+var canPlayTypeToNumber = require('./');
 
 test('canPlayTypeToNumber()', function(t) {
   t.plan(5);

@@ -58,7 +58,6 @@
     "istanbul-coveralls": "^1.0.1",
     "jshint-stylish": "^1.0.0",
     "merge-stream": "^0.1.6",
-    "require-main": "^0.1.1",
     "rimraf": "^2.2.8",
     "tap-dot": "^0.2.3",
     "tap-spec": "^1.0.0",
