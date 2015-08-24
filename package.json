@@ -2,31 +2,17 @@
   "name": "can-play-type-to-number",
   "version": "1.0.0",
   "description": "'probably' => 2, 'maybe' => 1, '' => 0",
-  "main": "dist/can-play-type-to-number-cjs.js",
-  "scripts": {
-    "test": "gulp test",
-    "coverage": "istanbul cover test.js",
-    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
-  },
-  "author": {
-    "name": "Shinnosuke Watanabe",
-    "email": "snnskwtnb@gmail.com",
-    "url": "https://github.com/shinnn"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shinnn/can-play-type-to-number.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shinnn/can-play-type-to-number/issues"
-  },
-  "homepage": "https://github.com/shinnn/can-play-type-to-number",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/shinnn/can-play-type-to-number/blob/master/LICENSE"
-    }
+  "files": [
+    "index.js"
   ],
+  "scripts": {
+    "pretest": "eslint --config @shinnn browser.js index.js test.js",
+    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js",
+    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+  },
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "repository": "shinnn/can-play-type-to-number",
+  "license": "MIT",
   "keywords": [
     "audio",
     "video",
@@ -45,23 +31,10 @@
     "browser"
   ],
   "devDependencies": {
-    "gulp": "^3.8.9",
-    "gulp-footer": "^1.0.5",
-    "gulp-header": "^1.2.2",
-    "gulp-jscs": "^1.2.1",
-    "gulp-jshint": "^1.8.6",
-    "gulp-jsonlint": "^1.0.1",
-    "gulp-load-plugins": "^0.7.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-wrap-amd": "^0.3.1",
-    "istanbul": "^0.3.2",
-    "istanbul-coveralls": "^1.0.1",
-    "jshint-stylish": "^1.0.0",
-    "merge-stream": "^0.1.6",
-    "rimraf": "^2.2.8",
-    "tap-dot": "^0.2.3",
-    "tap-spec": "^1.0.1",
-    "tape": "^3.0.1",
-    "to-camel-case": "^0.2.1"
+    "@shinnn/eslint-config": "^1.1.0",
+    "eslint": "^1.6.0",
+    "istanbul": "^0.3.22",
+    "require-bower-files": "^3.0.0",
+    "tape": "^4.2.1"
   }
 }

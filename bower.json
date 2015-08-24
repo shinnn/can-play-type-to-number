@@ -1,6 +1,5 @@
 {
   "name": "can-play-type-to-number",
-  "version": "1.0.0",
   "description": "'probably' => 2, 'maybe' => 1, '' => 0",
   "keywords": [
     "audio",
@@ -17,30 +16,25 @@
     "level",
     "number"
   ],
-  "main": "dist/can-play-type-to-number.js",
+  "main": "browser.js",
+  "moduleType": "globals",
   "homepage": "https://github.com/shinnn/can-play-type-to-number",
   "repository": {
     "type": "git",
     "url": "git://github.com/shinnn/can-play-type-to-number.git"
   },
   "authors": [
-    {
-      "name": "Shinnosuke Watanabe",
-      "email": "snnskwtnb@gmail.com",
-      "url": "https://github.com/shinnn"
-    }
+    "Shinnosuke Watanabe <snnskwtnb@gmail.com> (https://github.com/shinnn)"
   ],
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "*.js",
+    "*.json",
+    "*.yml",
     "coverage",
+    "dist/*.js",
     "node_modules",
-    "src",
-    "dist/can-play-type-to-number-cjs.js",
-    "dist/can-play-type-to-number-amd.js",
-    "test.js",
-    "gulpfile.js",
-    "component.json",
-    "package.json"
+    "src"
   ]
 }
