@@ -1,6 +1,6 @@
 {
   "name": "can-play-type-to-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "'probably' => 2, 'maybe' => 1, '' => 0",
   "files": [
     "index.js"
