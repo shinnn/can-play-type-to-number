@@ -1,40 +1,47 @@
 {
-  "name": "can-play-type-to-number",
-  "version": "1.0.1",
-  "description": "'probably' => 2, 'maybe' => 1, '' => 0",
-  "files": [
-    "index.js"
-  ],
-  "scripts": {
-    "pretest": "eslint --config @shinnn browser.js index.js test.js",
-    "test": "node --strong_mode --throw-deprecation --track-heap-objects test.js",
-    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
-  },
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "repository": "shinnn/can-play-type-to-number",
-  "license": "MIT",
-  "keywords": [
-    "audio",
-    "video",
-    "media",
-    "type",
-    "codec",
-    "codecs",
-    "canplaytype",
-    "playability",
-    "probably",
-    "maybe",
-    "support",
-    "level",
-    "number",
-    "client-side",
-    "browser"
-  ],
-  "devDependencies": {
-    "@shinnn/eslint-config": "^1.1.0",
-    "eslint": "^1.6.0",
-    "istanbul": "^0.3.22",
-    "require-bower-files": "^3.0.0",
-    "tape": "^4.2.1"
-  }
+	"name": "can-play-type-to-number",
+	"version": "1.0.1",
+	"description": "Convert a string which HTMLMediaElement.canPlayType() may returns into an integer",
+	"repository": "shinnn/can-play-type-to-number",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"prebuild": "eslint .",
+		"build": "rollup --config=node:module",
+		"pretest": "npm run-script build",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"module": "index.mjs",
+	"files": [
+		"index.js",
+		"index.mjs"
+	],
+	"keywords": [
+		"audio",
+		"video",
+		"media",
+		"type",
+		"codec",
+		"codecs",
+		"canplaytype",
+		"playability",
+		"probably",
+		"maybe",
+		"support",
+		"level",
+		"number",
+		"client-side",
+		"browser"
+	],
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.6.2",
+		"eslint": "^5.4.0",
+		"nyc": "^13.0.1",
+		"rollup": "^0.65.0",
+		"rollup-config-module": "^2.0.0",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	}
 }

@@ -1,10 +1,8 @@
-'use strict';
-
 /*!
  * can-play-type-to-number | MIT (c) Shinnosuke Watanabe
  * https://github.com/shinnn/can-play-type-to-number
 */
-function canPlayTypeToNumber(playability) {
+export default function canPlayTypeToNumber(playability) {
 	if (playability === 'probably') {
 		return 2;
 	} else if (playability === 'maybe') {
@@ -17,5 +15,3 @@ function canPlayTypeToNumber(playability) {
 
 	throw new TypeError(String(playability) + ' is not a string. Expected a string "probably", "maybe" or "".');
 }
-
-module.exports = canPlayTypeToNumber;
